@@ -18,7 +18,7 @@ if os.path.exists(path):
 else:
     # fallback demo data (so app never looks empty)
     df = pd.DataFrame({
-        "timestamp": pd.date_range(end=datetime.now(), periods=50, freq="S"),
+        "timestamp": pd.date_range(end=datetime.now(), periods=50, freq="s"),
         "trip_distance": np.random.rand(50) * 10
     })
 
